@@ -3,7 +3,7 @@ name: Greeting on variable day
 on: push
 
 env:
-  day-of-week: Monday
+  DAY_OF_WEEK: Monday
 
 jobs:
   greeting_job:
@@ -12,6 +12,6 @@ jobs:
       greeting: Hello
     steps:
       - name: "Say hello Deva Its Monday"
-        run: echo "$greeting $first_name today is $day-of-week"
+        run: echo "$greeting $first_name today is $DAY_OF_WEEK"
         env:
           first_name: Deva
