@@ -12,6 +12,6 @@ jobs:
       greeting: Hello
     steps:
       - name: "Say hello Deva Its Monday"
-        run: echo "$greeting $first_name today is $day-of-week
+        run: echo "$greeting $first_name today is $day-of-week"
         env:
           first_name: Deva
